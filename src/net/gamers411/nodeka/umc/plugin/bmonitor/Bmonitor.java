@@ -1,10 +1,10 @@
-package net.gamers411.nodeka.umc.plugin;
+package net.gamers411.nodeka.umc.plugin.bmonitor;
 
 import com.lsd.umc.script.ScriptInterface;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class bmonitor
+public class Bmonitor
 {
   private String version = "1.0.0";
   private ScriptInterface script;
@@ -30,7 +30,7 @@ public class bmonitor
     this.minAttacks = 0;
     this.maxDamage = 0;
 
-    script.registerCommand("BMONITOR", "net.gamers411.nodeka.umc.plugin.bmonitor", "commandLine");
+    script.registerCommand("BMONITOR", "net.gamers411.nodeka.umc.plugin.bmonitor.Bmonitor", "commandLine");
 
     script.print("Battle Monitor v" + this.version + "\001");
     script.print(" - by Nemesis - http://nodeka.gamers411./");
